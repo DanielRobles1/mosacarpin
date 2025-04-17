@@ -1,0 +1,199 @@
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .opcion {
+    margin-bottom: 40px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  label img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: border 0.3s;
+  }
+  
+  input[type="radio"]:checked + img {
+    border-color: #d99c3a;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background: #d99c3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+  }
+  .seccion-diseno {
+    background: url('https://crehana-blog.imgix.net/media/filer_public/de/e2/dee29ff5-5cdc-4228-9585-1434d93bff78/cepillo_de_carpintero.jpg?auto=format&q=50') no-repeat center center/cover;
+    padding: 60px 20px;
+    min-height: 100vh;
+
+  }
+  .panel-diseno {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .panel-diseno:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .panel-diseno h2 {
+    text-align: center;
+    color: #2e2e2e;
+    margin-bottom: 1.5rem;
+  }
+  footer {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top: 2px solid #cbb28c;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    color: #3e2f1c;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  }
+  /* Logo y título elegante */
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    height: 90px;
+    border-radius: 170%;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-marca {
+    font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    color: #3e2f1c;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  /* Estilo general del nav */
+  .nav-elegante {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #cbb28c;
+  }
+  
+  .nav-elegante ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-elegante ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #5c4a34;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-elegante ul li a:hover {
+    color: #b7791f;
+  }
+  .resultado-diseno {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    text-align: center;
+    display: none;
+  }
+  
+ 
+  .resultado-diseno img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  

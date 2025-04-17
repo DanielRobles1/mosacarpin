@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carpintería Artesanal</title>
+  <link rel="stylesheet" href="todo.component.css" />
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav-elegante">
+          <div class="logo-contenedor">
+            <img src="assets/car.jpg" alt="Logo Mosa Yága" class="logo" />
+            <h1 class="titulo-marca">Mosa Yága</h1>
+          </div>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="/disenador">¡Diseña el tuyo!</a></li>
+          </ul>
+        </nav>
+      
+        <div class="hero-text">
+          <h2>Arte en muebles</h2>
+          <p>Diseñamos y fabricamos piezas únicas que reflejan tu estilo</p>
+          <a href="/disenador" class="btn">¡Diseña el tuyo!</a>
+        </div>
+      </header>
+      
+
+  <section id="servicios" class="section">
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="./assets/mueble.jpg" alt="Muebles a medida" />
+        <h3>Muebles a Medida</h3>
+        <p>Fabricamos muebles personalizados según tus necesidades.</p>
+      </div>
+      <div class="card">
+        <img src="./assets/M8.jpg" alt="Restauración" />
+        <h3>Restauración</h3>
+        <p>Reparamos y damos nueva vida a tus muebles antiguos.</p>
+      </div>
+      <div class="card">
+        <img src="./assets/SE.jpg" alt="Diseño de Interiores" />
+        <h3>Muebles Sostenibles</h3>
+        <p>Promovemos la sostenibilidad en todos nuestros proyectos, ofreciendo opciones de muebles ecológicos, fabricados con materiales reciclados y de fuentes responsables, para aquellos que desean cuidar el medio ambiente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="img/galeria1.jpg" alt="Trabajo 1" />
+      <img src="img/galeria2.jpg" alt="Trabajo 2" />
+      <img src="img/galeria3.jpg" alt="Trabajo 3" />
+      <img src="img/galeria4.jpg" alt="Trabajo 4" />
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Carpintería Artesanal - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function mostrarResultado() {
+      const tipo = document.getElementById('tipoMueble').value;
+      const material = document.getElementById('material').value;
+      const acabado = document.getElementById('acabado').value;
+
+      const resultado = document.getElementById('resultado');
+
+      if (tipo && material && acabado) {
+        resultado.textContent = `Has diseñado un(a) ${tipo} de ${material} con acabado ${acabado}.`;
+      } else {
+        resultado.textContent = 'Por favor selecciona todas las opciones.';
+      }
+    }
+  </script>
+</body>
+</html>

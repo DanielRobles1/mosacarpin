@@ -1,0 +1,161 @@
+<header class="hero">
+    <nav class="nav-elegante">
+      <div class="logo-contenedor">
+        <img src="assets/car.jpg" alt="Logo Mosa Yága" class="logo" />
+        <h1 class="titulo-marca">Mosa Yága</h1>
+      </div>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="/disenador">¡Diseña el tuyo!</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="seccion-diseno">
+    <div class="panel-diseno">
+      <div class="contenedor-diseno">
+        <h2>Diseña tu Mueble</h2>
+  
+        <!-- Tipo de Mueble -->
+<div class="opcion">
+    <h3>Tipo de Mueble</h3>
+    <div class="cards" #tipoGrupo>
+      <label>
+        <input type="radio" name="tipo" value="Silla" />
+        <img src="assets/s2.webp" alt="Silla" />
+        <p>Silla</p>
+      </label>
+      <label>
+        <input type="radio" name="tipo" value="Mesa" />
+        <img src="assets/m1.jpg" alt="Mesa" />
+        <p>Mesa</p>
+      </label>
+      <label>
+        <input type="radio" name="tipo" value="Estantería" />
+        <img src="assets/e4.jpeg" alt="Estantería" />
+        <p>Estantería</p>
+      </label>
+    </div>
+  </div>
+  
+  <!-- Tipo de Madera -->
+  <div class="opcion">
+    <h3>Tipo de Madera</h3>
+    <div class="cards" #maderaGrupo>
+      <label>
+        <input type="radio" name="madera" value="Pino" />
+        <img src="assets/p1.webp" alt="Pino" />
+        <p>Pino</p>
+      </label>
+      <label>
+        <input type="radio" name="madera" value="Roble" />
+        <img src="assets/r1.webp" alt="Roble" />
+        <p>Roble</p>
+      </label>
+      <label>
+        <input type="radio" name="madera" value="Nogal" />
+        <img src="assets/n4.jpg" alt="Nogal" />
+        <p>Nogal</p>
+      </label>
+    </div>
+  </div>
+  
+  <!-- Acabado -->
+  <div class="opcion">
+    <h3>Acabado</h3>
+    <div class="cards" #acabadoGrupo>
+      <label>
+        <input type="radio" name="acabado" value="Natural" />
+        <img src="assets/A1.webp" alt="Natural" />
+        <p>Natural</p>
+      </label>
+      <label>
+        <input type="radio" name="acabado" value="Barnizado" />
+        <img src="assets/A2.jpeg" alt="Barnizado" />
+        <p>Barnizado</p>
+      </label>
+      <label>
+        <input type="radio" name="acabado" value="Lacado" />
+        <img src="assets/A3.jpg" alt="Lacado" />
+        <p>Lacado</p>
+      </label>
+    </div>
+  </div>
+  
+ <!-- Pigmentación -->
+<div class="opcion">
+    <h3>Pigmentación</h3>
+    <div class="cards" #pigmentoGrupo>
+      <label>
+        <input type="radio" name="pigmento" value="Parrot" />
+        <img src="assets/PIC1.png" alt="Parrot" />
+        <p>Parrot</p>
+      </label>
+      <label>
+        <input type="radio" name="pigmento" value="Americana" />
+        <img src="assets/PIC2.png" alt="Americana" />
+        <p>Americana</p>
+      </label>
+      <label>
+        <input type="radio" name="pigmento" value="Coral" />
+        <img src="assets/PIC3.png" alt="Coral" />
+        <p>Coral</p>
+      </label>
+      <label>
+        <input type="radio" name="pigmento" value="Mango" />
+        <img src="assets/PIC4.png" alt="Mango" />
+        <p>Mango</p>
+      </label>
+      <label>
+        <input type="radio" name="pigmento" value="Bahama" />
+        <img src="assets/PIC5.png" alt="Bahama" />
+        <p>Bahama</p>
+      </label>
+      <label>
+        <input type="radio" name="pigmento" value="Saafoam" />
+        <img src="assets/PIC6.png" alt="Saafoam" />
+        <p>Saafoam</p>
+      </label>
+      <label>
+        <input type="radio" name="pigmento" value="Royal purple" />
+        <img src="assets/PIC 7.png" alt="Royal purple" />
+        <p>Royal purple</p>
+      </label>
+      <label>
+        <input type="radio" name="pigmento" value="Ocean" />
+        <img src="assets/PIC8.png" alt="Ocean" />
+        <p>Ocean</p>
+      </label>
+      <label>
+        <input type="radio" name="pigmento" value="Banana" />
+        <img src="assets/pic9.png" alt="Banana" />
+        <p>Banana</p>
+      </label>
+    </div>
+  </div>
+  
+  <!-- Botón que llama al método Angular -->
+  <button class="btn" (click)="crearMueble()">Finalizar Diseño</button>
+
+  <p class="resultado">{{ resultado }}</p>
+  
+ <!--<div *ngIf="imagenGenerada" class="resultado-diseno">
+    <h3>Tu diseño</h3>
+    <p>{{ resultado }}</p>
+    <img [src]="imagenGenerada" alt="Diseño generado" />
+  </div>-->
+
+  <div *ngIf="imagenGenerada">
+    <p>{{ resultado }}</p>
+    <p>Haz clic para ver tu diseño:</p>
+    <a [href]="imagenGenerada" target="_blank">Ver diseño generado</a>
+  </div>
+  
+  
+  
+  <footer>
+    <p>© 2025 Mosa Yága - Todos los derechos reservados</p>
+  </footer>
+  
+  
