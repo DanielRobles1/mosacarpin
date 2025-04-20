@@ -1,16 +1,4 @@
-<header class="hero">
-    <nav class="nav-elegante">
-      <div class="logo-contenedor">
-        <img src="assets/car.jpg" alt="Logo Mosa Yága" class="logo" />
-        <h1 class="titulo-marca">Mosa Yága</h1>
-      </div>
-      <ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="/disenador">¡Diseña el tuyo!</a></li>
-      </ul>
-    </nav>
-  </header>
+
   
   <section class="seccion-diseno">
     <div class="panel-diseno">
@@ -22,19 +10,20 @@
     <h3>Tipo de Mueble</h3>
     <div class="cards" #tipoGrupo>
       <label>
-        <input type="radio" name="tipo" value="Silla" />
+        <input type="radio" name="tipo" value="Silla" (change)="seleccionarTipo('Silla')" />
+
         <img src="assets/s2.webp" alt="Silla" />
         <p>Silla</p>
       </label>
       <label>
-        <input type="radio" name="tipo" value="Mesa" />
+        <input type="radio" name="tipo" value="Mesa" (change)="seleccionarTipo('Mesa')" />
         <img src="assets/m1.jpg" alt="Mesa" />
         <p>Mesa</p>
       </label>
       <label>
-        <input type="radio" name="tipo" value="Estantería" />
-        <img src="assets/e4.jpeg" alt="Estantería" />
-        <p>Estantería</p>
+        <input type="radio" name="tipo" value="Closet" (change)="seleccionarTipo('Closet')" />
+        <img src="assets/c3.jpg" alt="Closet" />
+        <p>Closet</p>
       </label>
     </div>
   </div>
@@ -49,9 +38,9 @@
         <p>Pino</p>
       </label>
       <label>
-        <input type="radio" name="madera" value="Roble" />
-        <img src="assets/r1.webp" alt="Roble" />
-        <p>Roble</p>
+        <input type="radio" name="madera" value="Parota" />
+        <img src="assets/parota.webp" alt="Parota" />
+        <p>Parota</p>
       </label>
       <label>
         <input type="radio" name="madera" value="Nogal" />
@@ -66,25 +55,25 @@
     <h3>Acabado</h3>
     <div class="cards" #acabadoGrupo>
       <label>
-        <input type="radio" name="acabado" value="Natural" />
-        <img src="assets/A1.webp" alt="Natural" />
-        <p>Natural</p>
+        <input type="radio" name="acabado" value="Mate" />
+        <img src="assets/A1.webp" alt="Mate" />
+        <p>Mate</p>
       </label>
       <label>
-        <input type="radio" name="acabado" value="Barnizado" />
-        <img src="assets/A2.jpeg" alt="Barnizado" />
-        <p>Barnizado</p>
+        <input type="radio" name="acabado" value="Semi mate" />
+        <img src="assets/A2.jpeg" alt="Semi mate" />
+        <p>Semi mate</p>
       </label>
       <label>
-        <input type="radio" name="acabado" value="Lacado" />
-        <img src="assets/A3.jpg" alt="Lacado" />
-        <p>Lacado</p>
+        <input type="radio" name="acabado" value="Brillante" />
+        <img src="assets/A3.jpg" alt="Brillante" />
+        <p>Brillante</p>
       </label>
     </div>
   </div>
   
  <!-- Pigmentación -->
-<div class="opcion">
+ <div class="opcion" *ngIf="tipoSeleccionado === 'Mesa'">
     <h3>Pigmentación</h3>
     <div class="cards" #pigmentoGrupo>
       <label>
@@ -147,7 +136,7 @@
   </div>-->
 
   <div *ngIf="imagenGenerada">
-    <p>{{ resultado }}</p>
+
     <p>Haz clic para ver tu diseño:</p>
     <a [href]="imagenGenerada" target="_blank">Ver diseño generado</a>
   </div>

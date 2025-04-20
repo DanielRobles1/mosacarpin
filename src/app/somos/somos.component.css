@@ -1,0 +1,260 @@
+/* SECCIÓN ¿QUIÉNES SOMOS? */
+.quienes-somos {
+    background-image: url('https://th.bing.com/th/id/OIP.bYqdxG9rRRwLNSnSaJoZGQHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 20px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    position: relative;
+  }
+  
+  .quienes-somos::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.85); /* capa blanca translúcida */
+    z-index: 1;
+  }
+  
+  .quienes-somos .contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .quienes-somos h1 {
+    font-size: 3rem;
+    color: #2c2c2c;
+    margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .quienes-somos h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #8aa65a;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .quienes-somos p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #4b4b4b;
+    margin-bottom: 25px;
+  }
+  
+  .quienes-somos strong {
+    color: #6b8e23;
+    font-weight: bold;
+  }
+  
+  /* EQUIPO */
+  .equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 60px 0;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  @media (min-width: 768px) {
+    .equipo {
+      flex-direction: row;
+    }
+  
+    .equipo .imagen-container,
+    .equipo .texto {
+      width: 45%;
+    }
+  }
+  
+  .imagen-container {
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .imagen-container img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 4px solid #a7d7b4;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .texto {
+    max-width: 600px;
+  }
+  
+  .texto h2 {
+    font-size: 2rem;
+    color: #2d6a4f;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .texto p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  /* COMPROMISO MEDIO AMBIENTE */
+  .compromiso {
+    background-color: #e6f9e6;
+    padding: 3rem;
+    margin-top: 3rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  }
+  
+  .compromiso h2 {
+    font-size: 2rem;
+    color: #2b8a3e;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .compromiso p {
+    font-size: 1.125rem;
+    color: #3d3d3d;
+    line-height: 1.8;
+  }
+  
+  /* IMAGEN DE COMPROMISO */
+  .imagen-eco {
+    width: 100%;
+    max-width: 490px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .imagen-eco:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imagen-eco::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #8aa65a;
+    margin: 15px auto 0;
+    border-radius: 2px;
+  }
+  
+  /* TESTIMONIOS */
+  .testimonios {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Esto es clave para separarlos */
+  }
+
+  .testimonio {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 950px;
+    width: 100%;
+  }
+  
+  .testimonios h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonios .testimonio {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .testimonio:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .testimonios .testimonio p {
+    font-size: 1.125rem;
+    color: #777;
+    margin-bottom: 1rem;
+    margin: 0 auto 2rem auto; /* <--- espacio inferior entre testimonios */
+  }
+  
+  .testimonios .font-semibold {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .testimonios .text-sm {
+    font-size: 0.875rem;
+    color: #aaa;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top: 2px solid #cbb28c;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    color: #3e2f1c;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .imagen-eco {
+    width: 100%;
+    max-width: 490px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto al pasar el cursor */
+    margin: 0 auto; /* Centrado horizontal */
+  display: block; /* Asegura que sea un bloque para el centrado */
+  }
+  
+  .imagen-eco:hover {
+    transform: scale(1.05); /* Aumento sutil al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+  }
+  
+  .imagen-eco::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #8aa65a; /* Verde sutil */
+    margin: 15px auto 0;
+    border-radius: 2px;
+  }
+  

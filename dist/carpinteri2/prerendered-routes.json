@@ -1,6 +1,7 @@
 {
   "routes": [
     "/",
-    "/disenador"
+    "/disenador",
+    "/somos"
   ]
 }

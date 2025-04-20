@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carpintería Artesanal</title>
-  <link rel="stylesheet" href="todo.component.css" />
-</head>
+
+
 <body>
     <header class="hero">
-        <nav class="nav-elegante">
-          <div class="logo-contenedor">
-            <img src="assets/car.jpg" alt="Logo Mosa Yága" class="logo" />
-            <h1 class="titulo-marca">Mosa Yága</h1>
-          </div>
-          <ul>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="/disenador">¡Diseña el tuyo!</a></li>
-          </ul>
-        </nav>
       
         <div class="hero-text">
           <h2>Arte en muebles</h2>
@@ -46,21 +29,65 @@
         <h3>Muebles Sostenibles</h3>
         <p>Promovemos la sostenibilidad en todos nuestros proyectos, ofreciendo opciones de muebles ecológicos, fabricados con materiales reciclados y de fuentes responsables, para aquellos que desean cuidar el medio ambiente.</p>
       </div>
+      <div class="card">
+        <img src="./assets/ada1.png" alt="Adaptabilidad a tu alcance." />
+        <h3>Adaptabilidad a tu alcance.</h3>
+        <p>En MOSA YAGA estamos conscientes de las necesiades del mercado actual, por tanto somos una empresa adaptable en todo lo relacionado a tu mobiliario: diseño, materiales, presupuesto.</p>
+      </div>
+      <div class="card">
+        <img src="./assets/cl1.png" alt="Closets y vestidores" />
+        <h3>Closets y vestidores</h3>
+        <p>Soluciones de almacenamiento a medida, optimizando cada rincón de tu hogar.</p>
+      </div>
+      
     </div>
   </section>
 
-  <section id="galeria" class="section">
-    <h2>Galería</h2>
+  <section class="gallery-section">
+    <h2 class="gallery-title">Galería de creaciones</h2>
     <div class="gallery">
-      <img src="img/galeria1.jpg" alt="Trabajo 1" />
-      <img src="img/galeria2.jpg" alt="Trabajo 2" />
-      <img src="img/galeria3.jpg" alt="Trabajo 3" />
-      <img src="img/galeria4.jpg" alt="Trabajo 4" />
+      <img src="assets/t1.jpg" alt="Mueble artesanal 1">
+      <img src="assets/t2.jpg" alt="Mueble artesanal 2">
+      <img src="assets/t3.jpg" alt="Mueble artesanal 3">
+      <img src="assets/t4.jpg" alt="Mueble artesanal 3">
+      <img src="assets/t5.jpg" alt="Mueble artesanal 3">
+      <img src="assets/mueble.jpg" alt="Mueble artesanal 3">
+      <!-- Agrega más imágenes aquí -->
     </div>
-  </section>
+</section>
+<section class="contacto-section">
+  <div class="contacto-contenido">
+    <h2 class="contacto-titulo">Contáctanos</h2>
+    <p class="contacto-texto">
+      ¿Tienes dudas, quieres hacer un pedido personalizado o simplemente saludarnos? Estamos aquí para escucharte.
+    </p>
+
+    <!-- Redes sociales -->
+    <div class="redes-sociales">
+      <a href="https://facebook.com/mosayaga" target="_blank" aria-label="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com/mosayaga" target="_blank" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/529514135928" target="_blank" aria-label="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      </a>
+    </div>
+
+    <form class="formulario-contacto">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo electrónico" required />
+      <textarea placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
+  
 
   <footer>
-    <p>© 2025 Carpintería Artesanal - Todos los derechos reservados</p>
+    <p>© 2025 Mosa Yága - Todos los derechos reservados</p>
   </footer>
 
   <script>
@@ -79,4 +106,3 @@
     }
   </script>
 </body>
-</html>
