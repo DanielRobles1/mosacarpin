@@ -40,13 +40,33 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%; /* Asegura que ocupe todo el ancho */
   }
+  
+  /* Asegúrate de que el título y el párrafo estén centrados */
   .hero-text h2 {
     font-size: 3rem;
+    margin-bottom: 15px;
   }
+  
   .hero-text p {
     font-size: 1.2rem;
     margin: 10px 0;
+  }
+  
+  .hero-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d99c3a;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .hero-text .btn:hover {
+    background-color: #f2b264;
   }
   .btn {
     display: inline-block;
