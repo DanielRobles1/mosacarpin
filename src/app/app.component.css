@@ -22,6 +22,9 @@ nav {
     text-decoration: none;
     font-weight: bold;
   }
+  .hero {
+    position: relative; /* Establece el contenedor como relativo */
+  }
   
   .hero-text {
     position: absolute;
@@ -50,11 +53,12 @@ nav {
     }
     
     .cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      
     
     label {
       display: flex;
