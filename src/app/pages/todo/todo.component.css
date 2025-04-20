@@ -257,33 +257,6 @@
     letter-spacing: 1px;
   }
   
-  /* Estilo general del nav */
-  .nav-elegante {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #cbb28c;
-  }
-  
-  .nav-elegante ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-elegante ul li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #5c4a34;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-elegante ul li a:hover {
-    color: #b7791f;
-  }
   footer {
     background-color: rgba(255, 255, 255, 0.95);
     border-top: 2px solid #cbb28c;
