@@ -39,7 +39,7 @@
     position: relative;}
       
       .hero-text {
-        position: center;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -48,6 +48,7 @@
       }
       
       .hero-text h2 {
+        position: absolute;
         font-size: 3rem;
         margin-bottom: 15px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -60,6 +61,7 @@
       }
       
       .hero-text .btn {
+        position: absolute;
         display: inline-block;
         padding: 10px 20px;
         background-color: #d99c3a;
@@ -256,7 +258,7 @@
     margin: 0;
     letter-spacing: 1px;
   }
-
+  
   footer {
     background-color: rgba(255, 255, 255, 0.95);
     border-top: 2px solid #cbb28c;
