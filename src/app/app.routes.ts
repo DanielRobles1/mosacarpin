@@ -10,6 +10,4 @@ export const routes: Routes = [
     path: 'somos',
     loadComponent: () => import('./somos/somos.component').then(m => m.SomosComponent)
   }
-  
-  
 ];
