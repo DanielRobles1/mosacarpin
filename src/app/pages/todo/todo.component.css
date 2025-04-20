@@ -21,7 +21,9 @@
     align-items: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.6);
+    flex-wrap: wrap;
   }
+  
   nav ul {
     display: flex;
     list-style: none;
@@ -222,12 +224,6 @@
     vertical-align: middle;
   }
   
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
   
   nav h1 {
     margin: 0;
